@@ -568,20 +568,20 @@
                   <form id="contact-form" onsubmit="sendEmail(event)">  
 									<div class="row">
 										<div class="col-lg d2c_form_column">
-											<input type="text" name="name" class="form-control" id="name" pattern="^[A-Za-z][A-Za-z\s]*$" placeholder="Full Name :" required>
+											<input type="text" data=""="name" class="form-control" id="name" pattern="^[A-Za-z][A-Za-z\s]*$" placeholder="Full Name :" required>
 										</div>
 										<div class="col-lg d2c_form_column">
-											<input type="tel" name="phone" class="form-control" id="number" pattern="[0-9]{10}" title="Enter 10 digit phone number" placeholder="Phone Number :" required>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-lg d2c_form_column">
-											<input type="email" class="form-control" name="email" id="email_1"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ " placeholder="Enter Email Address :" required>
+											<input type="tel" data="phone" class="form-control" id="number" pattern="[0-9]{10}" title="Enter 10 digit phone number" placeholder="Phone Number :" required>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-lg d2c_form_column">
-											<textarea class="form-control" name="message" id="message" rows="5" placeholder="Write Your Message :" required></textarea>
+											<input type="email" class="form-control" data="email" id="email_1"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter Email Address :" required>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg d2c_form_column">
+											<textarea class="form-control" data="message" id="message" rows="5" placeholder="Write Your Message :" required></textarea>
 										</div>
 									</div>
 									
