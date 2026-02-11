@@ -1,53 +1,49 @@
-# -----------------------------
-# Site Settings
-# -----------------------------
+# The Site Configuration
 
 theme: jekyll-theme-chirpy
 
 lang: en
 timezone: Asia/Kolkata
 
+# --------------------------
+# SEO Settings
+# --------------------------
+
 title: Aadith C H
 tagline: Security Engineer | SOC Analyst | Cloud Security
 description: Security research, SOC architecture, AWS security labs, detection engineering, and practical cybersecurity walkthroughs.
 url: "https://aadith1422.github.io"
-baseurl: ""
-
-theme_mode: dark
-
-# -----------------------------
-# Author & Social
-# -----------------------------
 
 github:
   username: Aadith1422
 
+twitter:
+  username:
+
 social:
   name: Aadith C H
-  email: yourmail@gmail.com   # <-- change to your real email
+  email: yourmail@gmail.com   # <-- Replace with your real email
   links:
     - https://github.com/Aadith1422
     - https://www.linkedin.com/in/aadithch
 
+# --------------------------
+# Theme Appearance
+# --------------------------
+
+theme_mode: dark
 avatar: /assets/img/profile.jpg
 
-# -----------------------------
-# SEO & Analytics
-# -----------------------------
+# --------------------------
+# Optional (Keep Empty if Not Using)
+# --------------------------
 
-webmaster_verifications:
-  google:
-  bing:
+cdn:
+social_preview_image:
 
-analytics:
-  google:
-    id:
-  goatcounter:
-    id:
-
-# -----------------------------
+# --------------------------
 # Features
-# -----------------------------
+# --------------------------
 
 toc: true
 
@@ -55,10 +51,21 @@ comments:
   provider:
 
 paginate: 10
+baseurl: ""
 
-# -----------------------------
+# --------------------------
+# Analytics (Leave Empty If Not Using)
+# --------------------------
+
+analytics:
+  google:
+    id:
+  goatcounter:
+    id:
+
+# --------------------------
 # Archives
-# -----------------------------
+# --------------------------
 
 jekyll-archives:
   enabled: [categories, tags]
@@ -68,54 +75,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
-# -----------------------------
-# Collections
-# -----------------------------
-
-collections:
-  tabs:
-    output: true
-    sort_by: order
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      comments: false
-      toc: true
-      permalink: /posts/:title/
-  - scope:
-      path: ""
-      type: tabs
-    values:
-      layout: page
-      permalink: /:title/
-
-# -----------------------------
-# Markdown & Styling
-# -----------------------------
-
-kramdown:
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: highlight
-
-sass:
-  style: compressed
-
-# -----------------------------
-# Exclude Files
-# -----------------------------
-
-exclude:
-  - "*.gem"
-  - "*.gemspec"
-  - docs
-  - tools
-  - README.md
-  - LICENSE
-  - "*.config.js"
-  - "package*.json"
